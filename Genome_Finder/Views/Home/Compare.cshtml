@@ -1,0 +1,55 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/e327efa3e0.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/css/compare-style.css">
+    <title>Genome Finder</title>
+</head>
+<body>
+    <header>
+        <div class="menu-content">
+            <h1 class="title">Genome Finder</h1>
+            <ul class="menu-itens">
+                <li><a href="/Home/Login">Login</a></li>
+                <li><a href="/Home/About">Sobre o comparador</a></li>
+                <li><a href="/Home/Comunity">Comunidade</a></li>
+                <li><a href="/Home/Index">Inicio</a></li>
+                <li><a href="https://www.ncbi.nlm.nih.gov/">NCBI</a></li>
+                <li><a href="https://github.com/Guiermis"><i class="fa-brands fa-github"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/guilherme-oliveira-975767213/"><i class="fa-brands fa-linkedin"></i></a></li>
+            </ul>
+        </div>
+    </header>
+    <main>
+            <div>
+                <h1>Comparador</h1>
+                <h5>Digite aqui a Base Nitrogenada para retornarmos o Primer!</h5>
+            </div>
+            <div id="form">
+                    <label for="text">
+                        <input type="text" id="base" class="input-wrapper">
+                    </label>
+                    <div id="button">
+                        <button value="Compare" onclick="compare()">Enviar</button>
+                    </div>
+    
+            </div>
+        
+            <div id="res">
+                <h2>Resultados</h2>
+                <h5 id="reslista"></h5>
+            </div>
+
+        
+    </main>
+
+    <script src="/js/compare-script.js"></script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/e327efa3e0.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/css/comunity-style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.8.0/chart.min.js" integrity="sha512-sW/w8s4RWTdFFSduOTGtk4isV1+190E/GghVffMA9XczdJ2MDzSzLEubKAs5h0wzgSJOQTRYyaz73L3d6RtJSg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <title>Genome Finder</title>
+</head>
+<body onload="charts()">
+    <header>
+        <div class="menu-content">
+            <h1 class="title">Genome Finder</h1>
+            <ul class="menu-itens">
+                <li><a href="/Home/Login">Login</a></li>
+                <li><a href="/Home/About">Sobre o comparador</a></li>
+                <li><a href="/Home/Index">Inicio</a></li>
+                <li><a href="/Home/Compare">Comparador</a></li>
+                <li><a href="https://www.ncbi.nlm.nih.gov/">NCBI</a></li>
+                <li><a href="https://github.com/Guiermis"><i class="fa-brands fa-github"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/guilherme-oliveira-975767213/"><i class="fa-brands fa-linkedin"></i></a></li>
+            </ul>
+        </div>
+    </header>
+    <main>
+        <canvas id="chart"></canvas>
+    </main>
+    <script src="/js/charts-scripts.js"></script>
+</body>
+</html>
