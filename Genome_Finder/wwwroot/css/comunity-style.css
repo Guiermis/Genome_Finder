@@ -47,18 +47,18 @@ main {
     align-items: center;
 }
 
-    .menu-content .menu-itens {
-        display: flex;
-        list-style: none;
-        gap: 10px;
-    }
+.menu-content .menu-itens {
+    display: flex;
+    list-style: none;
+    gap: 10px;
+}
 
-        .menu-content .menu-itens a {
-            text-decoration: none;
-            color: #F2F2F2;
-            padding: 1.0rem;
-        }
+.menu-content .menu-itens a {
+    text-decoration: none;
+    color: #F2F2F2;
+    padding: 1.0rem;
+}
 
-            .menu-content .menu-itens a:hover {
-                text-decoration: underline;
-            }
+.menu-content .menu-itens a:hover {
+    text-decoration: underline;
+}
