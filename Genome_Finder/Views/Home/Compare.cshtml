@@ -2,6 +2,8 @@
     Layout = null;
 }
 
+@model Base_Nitrogen
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -32,15 +34,26 @@
                 <h1>Comparador</h1>
                 <h5>Digite aqui a Base Nitrogenada para retornarmos o Primer!</h5>
             </div>
-            <div id="form">
-                    <label for="text">
-                        <input type="text" id="base" class="input-wrapper">
+
+            <form method="post" id="form" action="/Home/CompareRes">
+                    <label asp-for="Nome"> Nome da Espécie
+                        <input asp-for="Nome" type="text" id="base-nome" class="input-wrapper">
                     </label>
+
+                    <label asp-for="NCBICod"> Código do NCBI
+                        <input asp-for="NCBICod" type="text" id="NCBI-cod" class="input-wrapper">
+                    </label>
+
+                    <label asp-for="Gene"> Base Nitrogenada
+                        <input asp-for="Gene" type="text" id="base" class="input-wrapper">
+                    </label>
+                    
                     <div id="button">
                         <button value="Compare" onclick="compare()">Enviar</button>
                     </div>
-    
-            </div>
+            </form>
+
+
         
             <div id="res">
                 <h2>Resultados</h2>
