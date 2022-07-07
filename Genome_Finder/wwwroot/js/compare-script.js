@@ -1,23 +1,24 @@
 ﻿function compare() {
-    var fbase = document.getElementById('base').value
-    var fbase = fbase.toUpperCase();
-    var res = document.querySelector('div#res')
-    var output = [];           //output como array
+    let fbase = document.getElementById('base').value
+    let gbase = fbase.toUpperCase();
+    let bnome = document.getElementById('base-nome').value
+    let codNCBI = document.getElementById('NCBI-cod').value
+    let output = [];           //output como array
 
-    if (fbase.length == 0) { //verifica se a caixa de input está vazia.
+    if (gbase.length == 0) { //verifica se a caixa de input está vazia.
         window.alert("DIGITE!")
-    } else if (fbase.length /= 0) {
-        for (var i = 0; i < fbase.length; i++) {
-            if (fbase[i] == "A") {
+    } else if (gbase.length /= 0) {
+        for (var i = 0; i < gbase.length; i++) {
+            if (gbase[i] == "A") {
                 output[i] = "T";
-            } else if (fbase[i] == "G") {
+            } else if (gbase[i] == "G") {
                 output[i] = "C";
-            } else if (fbase[i] == "T") {
+            } else if (gbase[i] == "T") {
                 output[i] = "A";
-            } else if (fbase[i] == "C") {
+            } else if (gbase[i] == "C") {
                 output[i] = "G";
             } else
-                output[i] = fbase[i];
+                output[i] = gbase[i];
         } // fim do loop
 
         output = output.join('');   //transforma o array em string
