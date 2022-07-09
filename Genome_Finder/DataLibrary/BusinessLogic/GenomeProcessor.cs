@@ -5,19 +5,6 @@ namespace Genome_Finder.DataLibrary.BusinessLogic
 {
     public static class GenomeProcessor
     {
-        public static int SendData(string nome, string gene, int Searchnum, string ncbiCod)
-        {
-            Base_Nitrogen data = new Base_Nitrogen
-            {
-                Nome = nome,
-                Gene = gene,
-                searchNum = Searchnum,
-                NBCICod = ncbiCod
-            };
-
-            return 0;
-        }
-
         public static int CreateGenome(string nome, string gene, int Searchnum, string ncbiCod)
         {
             Base_Nitrogen data = new Base_Nitrogen
